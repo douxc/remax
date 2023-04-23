@@ -46,6 +46,8 @@ export interface BaseProps {
 
   /** 点击时触发同时阻止事件冒泡 */
   catchClick?: (event: any) => any;
+  /** 升级到React18之后，默认props中不再声明children，需要手动添加 */
+  children?: React.ReactNode;
 }
 
 // reference: https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html
